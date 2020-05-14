@@ -1,0 +1,36 @@
+
+<h2>App1Component</h2>
+<h3>Getting Data from AppComponent: {{fullName}}</h3>
+<h3>Getting Data from AppComponent: {{companyName}}</h3>
+<h3>Gettong Data from AppComponent: {{location}}</h3>
+
+<app-test1 (childToParent)='childData=$event' [getParentFullName]='fullName' [getParentCompany]='companyName' [getParentLocation]='location'>
+  </app-test1>
+  <h2>{{childData}}</h2>
+
+Value Passed from Test1Component using ViewChild is : {{this.getChildValue}}
+<!--<h2>AppComponent</h2>
+<h3>Value is displayed from AppComponent is: {{fullName}}</h3>
+<h3>Value is displayed from AppComponent is: {{companyName}}</h3>
+<h3>Value is displayed from AppComponent is: {{Location}}</h3>
+
+<table>
+  <tr>
+    <th>Employee FullName</th>
+    <th>Company Name</th>
+    <th>Location</th>
+  </tr>
+
+  <tr *ngFor='let emp of employeeList'>
+    <td>{{emp.employeeId}}</td>
+    <td>{{emp.employeeName}}</td>
+    <td>{{emp.companyName}}</td>
+    <td>{{emp.Location}}</td>
+    <td>{{emp.PhoneNumber}}</td>
+  </tr>
+</table>
+
+
+<app-test1 (childProp)='chilData = $event' [getParentFullName]='fullName' [getParentCompany]='companyName' [getParentLocation]='Location' [getParentList]='employeeList'></app-test1>
+
+<h3>{{chilData}}</h3>-->
